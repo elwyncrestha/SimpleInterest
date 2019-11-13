@@ -9,9 +9,33 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnSimpleInterest"
+        android:id="@+id/btnShowSimpleInterest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Simple Interest"/>
+
+    <Button
+        android:id="@+id/btnShowAreaOfCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area of circle"/>
+
+    <Button
+        android:id="@+id/btnShowPalindrome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Palindrome Number"/>
+
+    <Button
+        android:id="@+id/btnShowReverseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reverse Number"/>
+
+    <Button
+        android:id="@+id/btnShowSwapNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Swap Number"/>
 
 </LinearLayout>

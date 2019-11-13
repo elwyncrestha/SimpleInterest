@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".activity.SimpleInterestActivity">
+    tools:context=".activity.SwapNumberActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate Simple Interest!"
+        android:text="Reverse Number"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,49 +20,28 @@
         android:layout_marginVertical="50dp"/>
 
     <EditText
-        android:id="@+id/etPrincipal"
+        android:id="@+id/etSwapFirst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Principal Amount"
+        android:hint="Enter number1"
         android:layout_margin="10dp"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:textSize="25dp"/>
 
     <EditText
-        android:id="@+id/etTime"
+        android:id="@+id/etSwapSecond"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Enter number2"
         android:layout_margin="10dp"
-        android:hint="Time (in yrs)"
-        android:inputType="numberDecimal"
-        android:textSize="25dp"/>
-
-    <EditText
-        android:id="@+id/etRate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Rate (p.a)"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:textSize="25dp"/>
 
     <Button
-        android:id="@+id/btnCalculateSI"
+        android:id="@+id/btnSwap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Calculate"/>
-
-    <TextView
-        android:id="@+id/tvSimpleInterest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginVertical="20dp"/>
+        android:text="Swap"/>
 
 </LinearLayout>

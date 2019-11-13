@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".activity.SimpleInterestActivity">
+    tools:context=".activity.AreaOfCircleActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate Simple Interest!"
+        android:text="Calculate Area of Circle"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,41 +20,23 @@
         android:layout_marginVertical="50dp"/>
 
     <EditText
-        android:id="@+id/etPrincipal"
+        android:id="@+id/etRadius"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Principal Amount"
+        android:hint="Enter radius"
         android:layout_margin="10dp"
-        android:inputType="numberDecimal"
-        android:textSize="25dp"/>
-
-    <EditText
-        android:id="@+id/etTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Time (in yrs)"
-        android:inputType="numberDecimal"
-        android:textSize="25dp"/>
-
-    <EditText
-        android:id="@+id/etRate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Rate (p.a)"
         android:inputType="numberDecimal"
         android:textSize="25dp"/>
 
     <Button
-        android:id="@+id/btnCalculateSI"
+        android:id="@+id/btnCalculateArea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Calculate"/>
 
     <TextView
-        android:id="@+id/tvSimpleInterest"
+        android:id="@+id/tvArea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
