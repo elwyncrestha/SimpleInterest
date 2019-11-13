@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.elvin.simpleinterest.model.SimpleInterest;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText etPrincipal;
@@ -51,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                float principal, time, rate, SI;
-                principal = time = rate = SI = 0.0f;
+                float principal, time, rate;
+                principal = time = rate = 0.0f;
                 try {
                     principal = Float.parseFloat(etPrincipal.getText().toString());
                 } catch (Exception e) {
@@ -71,8 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     etRate.setError("Enter valid rate");
                     return;
                 }
-                SI = (principal * time * rate) / 100;
-                tvSimpleInterest.setText(String.valueOf(SI));
+                tvSimpleInterest.setText(String.valueOf(new SimpleInterest(principal, time, rate).calculate()));
             }
         });
     }
